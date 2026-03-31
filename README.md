@@ -2,8 +2,7 @@
 
 [![CI](https://github.com/philiprehberger/dotnet-phone-validator/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-phone-validator/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/Philiprehberger.PhoneValidator.svg)](https://www.nuget.org/packages/Philiprehberger.PhoneValidator)
-[![License](https://img.shields.io/github/license/philiprehberger/dotnet-phone-validator)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/dotnet-phone-validator)](https://github.com/philiprehberger/dotnet-phone-validator/commits/main)
 
 International phone number validation and formatting based on ITU-T E.164 with country detection.
 
@@ -97,6 +96,24 @@ var unknown = Phone.DetectCountry("+999 123456");
 dotnet build src/Philiprehberger.PhoneValidator.csproj --configuration Release
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/dotnet-phone-validator)
+
+🐛 [Report issues](https://github.com/philiprehberger/dotnet-phone-validator/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/dotnet-phone-validator/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
