@@ -109,6 +109,26 @@ public static class Phone
     }
 
     /// <summary>
+    /// Strips non-digit characters (except a leading '+'), trims whitespace, and returns a cleaned
+    /// phone string ready for validation.
+    /// </summary>
+    /// <param name="number">The raw phone number input to normalize.</param>
+    /// <returns>A cleaned phone string containing only digits with an optional leading '+'.</returns>
+    public static string Normalize(string number)
+    {
+        if (string.IsNullOrWhiteSpace(number))
+        {
+            return string.Empty;
+        }
+
+        var trimmed = number.Trim();
+        var hasPlus = trimmed.StartsWith('+');
+        var digits = new string(trimmed.Where(char.IsDigit).ToArray());
+
+        return hasPlus ? $"+{digits}" : digits;
+    }
+
+    /// <summary>
     /// Detects the country name associated with a phone number based on its country dialing code.
     /// </summary>
     /// <param name="number">The phone number to analyze. Must include a country code prefix.</param>

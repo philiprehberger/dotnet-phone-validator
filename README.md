@@ -49,6 +49,18 @@ var national = Phone.Format("+33 1 23 45 67 89", PhoneFormat.National);
 // "123 456 789"
 ```
 
+### Normalize Input
+
+```csharp
+using Philiprehberger.PhoneValidator;
+
+var cleaned = Phone.Normalize("  +1 (415) 555-2671  ");
+// "+14155552671"
+
+var local = Phone.Normalize("  0301-234-5678 ");
+// "03012345678"
+```
+
 ### Detect Country
 
 ```csharp
@@ -70,6 +82,7 @@ var unknown = Phone.DetectCountry("+999 123456");
 | `IsValid(string number)` | Returns `true` if the number is a valid E.164 phone number |
 | `Validate(string number)` | Validates and parses the number into a `PhoneResult` |
 | `Format(string number, PhoneFormat format)` | Formats the number in the specified format (default E.164) |
+| `Normalize(string number)` | Strips non-digit characters (except leading `+`), trims whitespace |
 | `DetectCountry(string number)` | Returns the country name for the number's dialing code, or `null` |
 
 ### `PhoneResult`

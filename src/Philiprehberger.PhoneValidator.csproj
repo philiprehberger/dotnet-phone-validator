@@ -11,7 +11,7 @@
 
     <!-- Package metadata -->
     <PackageId>Philiprehberger.PhoneValidator</PackageId>
-    <Version>0.1.1</Version>
+    <Version>0.2.0</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>International phone number validation and formatting based on ITU-T E.164 with country detection.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
